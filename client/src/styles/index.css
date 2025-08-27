@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family:"Roboto", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+body {
+  /*This centers main, dont hask how...*/
+  background: url(../../images/testmusa.jpg);
+  background-size: cover; 
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  overflow: hidden;
+}
+
+/* Main is where all the content will lie, applying a general glassmorphism effect, and rounded boundaries to instill understandig that this is the "working space" so to say. */
+
+.main { 
+    position: absolute;
+    top: 4px;
+    width: 98vw;
+    height: 98vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.3)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  
+}
+
+.populated-page{
+  position: relative;
+  top: 5px;
+  width: 73.6%;
+  height: 96%;
+  border-radius: 20px;
+  margin: 0.5%;  
+
+    background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.3)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Do SECTION 1 PADDING HERE */
+
+.section-one {
+  display: flex;
+  flex-direction: row;
+    position: relative;
+    left: 10px;
+    padding: 7px;
+    top: 9px;
+  font-size: 100vw;
+}
+
+.section-one-usr-img {
+    position: absolute;
+    width: 12%;
+    border-radius: 150px;
+    top: 28%;
+    left: 69%;
+}
+
+.section-one-logo {
+    width: 30%;
+}
+
+.search-wrapper {
+  width: 99%;
+  max-width: 600px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.search-container {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  left: -1%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  padding-right: 60px;
+  height: 50%;
+}
+
+.shortcut {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: white;
+  font-size: 80%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.lib-item{
+  cursor: pointer;
+  margin-top: 2%;
+  position: relative;  
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 100%;
+  margin-left:4px ;
+}
+
+
+
+
+.lib-item:hover {
+animation: shimmer 2s ease-in-out;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    inset 8px 0 15px rgba(16, 203, 255, 0.15),  /* faint neon green left glow */
+    inset 0 0 30px rgba(255, 255, 255, 0.1),
+    0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+
+.library {
+  margin-top: 15%;
+}
+
+.sidebar {
+  width: 25%;
+    overflow-y: auto;      /* Vertical scroll if needed */
+  overflow-x: hidden; 
+}
+
+.library-icon {
+  width: 15%;
+  color: white;
+}
+
+.lib-text{
+  position: absolute;
+  display: inline;
+  color: white;
+  font-size: 17px;
+  font-family:"Roboto", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  left: 20%;
+  top: 30%;
+  font-weight: 300;
+}
+
+.text-and-add-folders{
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10%;
+  position: relative;
+  width: 100%;
+   width: 100%; height: 100%;
+ 
+}
+
+.folders-add {
+  position: absolute;
+  left: 88%;
+  font-size: 28px;
+  padding: 2px;
+  color: rgba(128, 128, 128, 0.6); /* grey with transparency */
+  top: 2%;
+  cursor: pointer;
+}
+
+.folders-add:hover {
+  color: wheat;
+}
+
+.folders-text {
+  margin-left: 10px;
+  position: absolute;
+   color: rgba(128, 128, 128, 0.6); /* grey with transparency */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.test-user-folder{
+  margin-left: 6%;
+  border-radius: 4px;
+  position: relative;
+  width: 89%;
+  top: 20px;
+  padding: 5px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.test-user-folder:hover{
+  background: rgba(255, 255, 255, 0.05); /* soft see-thru */
+  border-radius: px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+  transition: all 0.5s ease;
+  
+}
+.user-folder-text {
+  position: absolute;
+  margin-top:1.6%;
+  color: white;
+  font-size: 0.93vw;
+  margin-left: 10%;
+}
+
+.user-folder-icon {
+  position: absolute;
+  left: 1.5%;
+  width: 7%;
+}
+
+.folder-docs{
+  width: 89%;
+  color: white;
+  position: absolute;
+  font-size: 0.9vw;
+  top: 98%;
+  left: 10%;
+}
+
+
+.doc-icon{
+  width: 7%;
+}
+
+.doc-name{
+  position: absolute;
+  left: 10%;
+  top: 8%;
+  
+}
+
+.populated-page h3{
+    color: white;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+
+
+.toggle {
+  width: 17%;
+  height: 8%;
+  border: 2px solid green;
+  border-radius: 20px;
+  position: relative;
+  left: 20px;
+  color: white;
+   background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+}
+
+.toggle p{  
+  display: inline;
+}
+
+
+.toggle-text{
+  position: relative;
+  top: 15%;
+  left: 12%;
+  word-spacing: 7px;
+  font-family: 'Roboto';
+}
+
+
+.toggle-text-done {
+  border: 1px solid yellow;
+  outline: 1px solid blue;
+
+}
+
+.work-orders {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+/*  border: 2px solid rgba(255, 255, 255, 0.1);*/
+}
+
+.work-orders {
+  color: white;
+  font-weight: lighter;
+  font-size: 1.2vw;
+}
+
+.work-order-table img{
+  width: 27px;
+  border-radius: 20px;
+}
+
+.work-order-table {
+  width: 100%;
+}
+
+.work-order-table td {
+      text-align: center;
+  
+}
+
+.work-order-table-priorityElement {
+  color: orange;
+  font-weight: bold;
+}
+
+.work-order-table th {
+  padding-bottom: 20px
+}
+
+.work-order-table td{
+  padding-bottom: 10px;
+}
+
+.work-order-table-row {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 22px;
+}
+
+.work-order-table-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.new-work-order-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 10px 20px;
+  background-color: rgb(46, 66, 246); /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.work-order-popup {
+  width: 50%;
+  height: 97%;
+  border: 2px solid yellow;
+  position: absolute;
+  right: 22%;
+  bottom: 2%;
+  background: white; /* or your preferred background */
+  animation: popupFadeIn 0.5s ease;
+  /* Add other styles as needed */
+  border-radius: 10px;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.priority-High {
+    color: red !important;
+}
+
+.priority-Medium {
+    color: orange;
+}
+
+
+.priority-Low {
+    color: green;
+}
+
